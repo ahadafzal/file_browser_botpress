@@ -17,7 +17,7 @@ Live File Rename Demo
 ## How to Run
 <hr>
 
-Please clone this repo and make sure you have node installed.
+Please clone this repo and make sure you have node & npm installed.
 
 If you don't have node, please refer [this](https://nodejs.dev/learn/how-to-install-nodejs) doc to install.
 
@@ -26,7 +26,7 @@ If you don't have node, please refer [this](https://nodejs.dev/learn/how-to-inst
 After cloning, open the repo directory in terminal and run:
 
 ```
-node install
+npm install
 ```
 <br/>
 
