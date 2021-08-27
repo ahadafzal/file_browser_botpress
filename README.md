@@ -63,3 +63,7 @@ I optimized this by only reading the open tree structure and creating a file wat
 I have implemented the backend using the node's file system module and have used web sockets to let the client know in case of any changes made in the file structure.
 
 The frontend is implemented using reactjs and material UI.
+
+Lastly, I want to say that I know this project has a lot of room for improvement as it made in just two days. So, please let me know your suggestions. 
+
+Thanks a lot for your time. Have a good day.
