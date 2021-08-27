@@ -5,7 +5,7 @@
 Problem statement: [Here](https://docs.google.com/document/u/3/d/1VtZ3lMS-ZEZnRbFpZLufpQH3eCCtl1hquVmAGQOb-Mw)
 
 
-### Demo
+## Demo
 <hr>
 <img src='demo/Demo.gif'/>
 <br/><br>
@@ -14,7 +14,7 @@ Live File Rename Demo
 <img src='demo/Rename.gif'/>
 
 
-### How to Run
+## How to Run
 <hr>
 
 Please clone this repo and make sure you have node installed.
@@ -50,3 +50,16 @@ node file_browser.js
 ```
 
 
+
+
+## Some implementation notes
+<hr>
+My initial thought of implementation was to read the entire directory tree structure of each directory and create a file watcher to watch any changes that are made in the tree structure.
+
+But reading the entire tree was too resource expensive and also useless, as we won't open the entire tree all at once. Also creating a file watcher for the entire tree structure was also too expensive.
+
+I optimized this by only reading the open tree structure and creating a file watcher for only opened trees.
+
+I have implemented the backend using the node's file system module and have used web sockets to let the client know in case of any changes made in the file structure.
+
+The frontend is implemented using reactjs and material UI.
